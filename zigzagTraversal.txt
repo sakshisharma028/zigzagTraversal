@@ -21,7 +21,7 @@ Node rootNode;
 void printZigZagTraversal() { 
       
     // if null then return 
-    if (rootNode = null) { //add=
+    if (rootNode ==null) { 
     return; 
     } 
   
@@ -50,7 +50,7 @@ void printZigZagTraversal() {
         } 
           
         if (node.rightChild != null) { 
-        nextLevel.push(node->rightChild); //add
+        nextLevel.push(node.rightChild); 
         } 
     } 
     else { 
@@ -76,10 +76,10 @@ void printZigZagTraversal() {
 public class zigZagTreeTraversal { 
   
 // driver program to test the above function 
-public static void main(String args) //add 
+public static void main(String args[])  
 { 
     BinaryTree tree = new BinaryTree(); 
-    tree.rootNode = new Node(); //add1
+    tree.rootNode = new Node(1); 
     tree.rootNode.leftChild = new Node(2); 
     tree.rootNode.rightChild = new Node(3); 
     tree.rootNode.leftChild.leftChild = new Node(7); 
