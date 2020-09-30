@@ -36,13 +36,13 @@ void printZigZagTraversal() {
     // check if stack is empty 
     while (!currentLevel.isEmpty()) { 
   
-    // pop out of stack 
+    // pop out of the current stack 
     Node node = currentLevel.pop(); 
       
     // print the data in it 
     System.out.print(node.data + " "); 
   
-    // store data according to current 
+    // store data according to current  val
     // order. 
     if (leftToRight) { 
         if (node.leftChild != null) { 
